@@ -65,6 +65,10 @@ export const SubmitLeftButton = styled.button`
   background-color: #227cff;
   margin-top: 60px;
   margin-bottom: auto;
+  &:hover {
+    background-color: white;
+    color: #227cff;
+  }
 `;
 
 export const SubmitRightWrap = styled.div`
