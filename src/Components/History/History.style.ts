@@ -42,6 +42,10 @@ export const HistoryLeftButton = styled.button`
   cursor: pointer;
   background-color: #227cff;
   margin-top: 60px;
+  &:hover {
+    background-color: white;
+    color: #227cff;
+  }
 `;
 
 export const HistoryRightWrap = styled.div`
