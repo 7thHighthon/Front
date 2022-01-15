@@ -41,6 +41,7 @@ export const HistoryFBButton = styled.button`
   top: 90px;
   right: 30px;
   padding: 0px;
+  background: none;
 `;
 
 export const HistoryFBButtonImg = styled.img`

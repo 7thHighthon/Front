@@ -49,6 +49,7 @@ export const IntroFBButton = styled.button`
   top: 90px;
   right: 30px;
   padding: 0px;
+  background: none;
 `;
 
 export const IntroFBButtonImg = styled.img`

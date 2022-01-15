@@ -5,6 +5,7 @@ import {
   QuestionSubTitle,
   QuetionTitle,
 } from "./Question.style";
+import BlackFaceBook from "../../asset/Img/blackfacebook.svg";
 
 const Question: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const Question: React.FC = () => {
       <QuestionSubTitle>자주하는 질문</QuestionSubTitle>
       <QuetionTitle>Q&A</QuetionTitle>
       <QuestionFBButton>
-        <QuestionFBButtonImg />
+        <QuestionFBButtonImg src={BlackFaceBook} />
       </QuestionFBButton>
     </QuestionBox>
   );

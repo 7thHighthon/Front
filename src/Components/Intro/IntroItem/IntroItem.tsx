@@ -21,9 +21,6 @@ const IntroItem: React.FC<IIntroItemProps> = ({ img, title, desc }) => {
       </IntroItemImgWrap>
       <IntroItemTitle>{title}</IntroItemTitle>
       <IntroItemDesc>{desc}</IntroItemDesc>
-      <IntroFBButton>
-        <IntroFBButtonImg />
-      </IntroFBButton>
     </IntroItemBox>
   );
 };

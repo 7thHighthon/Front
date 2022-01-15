@@ -6,10 +6,12 @@ export const Header = styled.div`
   width: 100%;
   height: 60px;
   background-color: transparent;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 2;
 `;
 
 export const TitleDiv = styled.div`
@@ -26,10 +28,10 @@ export const Logoimg = styled.img`
 `;
 
 export const Title = styled.p`
-  width: 150px;
   height: 27px;
   font-size: 22px;
   text-align: center;
+  font-weight: bold;
 `;
 
 export const MenuDiv = styled.div`

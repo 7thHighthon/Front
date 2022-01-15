@@ -1,12 +1,15 @@
 import React from "react";
 import {
   IntroBox,
+  IntroFBButton,
+  IntroFBButtonImg,
   IntroItemWrap,
   IntroSubTitle,
   IntroTitle,
 } from "./Intro.style";
 import * as CONST from "./constant/index";
 import IntroItem from "./IntroItem";
+import BlackFaceBook from "../../asset/Img/blackfacebook.svg";
 
 const Intro: React.FC = () => {
   return (
@@ -18,6 +21,9 @@ const Intro: React.FC = () => {
           return <IntroItem {...item} />;
         })}
       </IntroItemWrap>
+      <IntroFBButton>
+        <IntroFBButtonImg src={BlackFaceBook} />
+      </IntroFBButton>
     </IntroBox>
   );
 };

@@ -38,6 +38,7 @@ export const QuestionFBButton = styled.button`
   top: 90px;
   right: 30px;
   padding: 0px;
+  background: none;
 `;
 
 export const QuestionFBButtonImg = styled.img`

@@ -6,6 +6,7 @@ import {
   HistorySubTitle,
   HistoryTitle,
 } from "./History.style";
+import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 
 const History: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const History: React.FC = () => {
       <HistorySubTitle>2016 ~ 2022</HistorySubTitle>
       <HistoryTitle>History</HistoryTitle>
       <HistoryFBButton>
-        <HistoryFBButtonImg />
+        <HistoryFBButtonImg src={WhiteFaceBook} />
       </HistoryFBButton>
     </HistoryBox>
   );
