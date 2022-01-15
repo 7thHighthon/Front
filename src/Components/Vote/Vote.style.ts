@@ -79,6 +79,11 @@ export const VoteRightButton = styled.button`
   cursor: pointer;
   background-color: #227cff;
   margin-top: 60px;
+  &:hover {
+    border: 3px solid #227cff;
+    background-color: white;
+    color: #227cff;
+  }
 `;
 
 export const VoteFBButton = styled.button`
