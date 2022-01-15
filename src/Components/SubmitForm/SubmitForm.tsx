@@ -15,12 +15,14 @@ import {
   InputWrapRow,
   SubmitFormBox,
   SubmitFormGuideText,
+  SubmitFormGuideTextWrap,
   SubmitFormLine,
   SubmitFormSaveButton,
   SubmitFormSubmitButton,
   SubmitFormSubTitle,
   SubmitFormTitle,
   SubmitFormTitleWrap,
+  SubmitLoader,
 } from "./SubmitForm.style";
 
 const SubmitForm: React.FC = () => {
@@ -29,22 +31,25 @@ const SubmitForm: React.FC = () => {
 
   const { onChangeSelectFileName } = usePPT();
   const { onChangeSelectVideoName } = useVideo();
-  const { onClickSubmit } = useSubmit();
+  const { onClickSubmit, isLoading, isShow } = useSubmit();
 
   return (
     <SubmitFormBox>
       <SubmitFormSubTitle>7th Highthon</SubmitFormSubTitle>
       <SubmitFormTitleWrap>
         <SubmitFormTitle>Submit</SubmitFormTitle>
-        <SubmitFormGuideText>
-          {isSubmit ? (
-            <strong>제출이 완료되었습니다.</strong>
-          ) : (
-            <>
-              <strong>*</strong>은 필수항목 입니다.
-            </>
-          )}
-        </SubmitFormGuideText>
+        <SubmitFormGuideTextWrap>
+          <SubmitFormGuideText>
+            {isSubmit ? (
+              <strong>제출이 완료되었습니다.</strong>
+            ) : (
+              <>
+                <strong>*</strong>은 필수항목 입니다.
+              </>
+            )}
+          </SubmitFormGuideText>
+          {isLoading && <>{isShow && <SubmitLoader />}</>}
+        </SubmitFormGuideTextWrap>
       </SubmitFormTitleWrap>
       <SubmitFormLine />
       {isSubmit ? (

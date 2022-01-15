@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const SubmitFormBox = styled.div`
   width: 100%;
@@ -24,6 +24,11 @@ export const SubmitFormTitle = styled.h1`
   font-weight: bold;
 `;
 
+export const SubmitFormGuideTextWrap = styled.div`
+  display: flex;
+  align-items: flex-end;
+`;
+
 export const SubmitFormGuideText = styled.p`
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -31,6 +36,24 @@ export const SubmitFormGuideText = styled.p`
   strong {
     color: #227cff;
   }
+`;
+
+const loaderSpin = keyframes`
+     to {
+    -webkit-transform: rotate(360deg);
+  }
+`;
+
+export const SubmitLoader = styled.div`
+  width: 10px;
+  height: 10px;
+  border: 5px solid #227cff;
+  border-radius: 50%;
+  border-top-color: #fff;
+  border-radius: 100px;
+  margin-left: 10px;
+  animation: ${loaderSpin} 1s ease-in-out infinite;
+  -webkit-animation: ${loaderSpin} 1s ease-in-out infinite;
 `;
 
 export const SubmitFormSubTitle = styled.h2`

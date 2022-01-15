@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { useRecoilState, useResetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import { postSubmitData } from "../../API/Submit/Submit.api";
 import { SubmitData, SubmitStatus } from "../../Store/SubmitAtom";
 
 const useSubmit = () => {
   const [submit, setSubmit] = useRecoilState(SubmitData);
   const [isSubmit, setIsSubmit] = useRecoilState(SubmitStatus);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isShow, setIsShow] = useState(false);
 
   const onClickSubmit = async () => {
     if (submit.members === "") {
@@ -37,6 +39,8 @@ const useSubmit = () => {
       return;
     }
 
+    setIsShow(true);
+
     const formData = new FormData();
     formData.append("PPTfile", submit.ppt);
     formData.append("gitHubURL", submit.githubOrganization);
@@ -56,13 +60,19 @@ const useSubmit = () => {
       window.alert(msg);
       if (success) {
         setIsSubmit(true);
+        setIsLoading(false);
+        setIsShow(false);
         return;
       }
       window.location.reload();
     }
+    if (status !== 200) {
+      setIsShow(false);
+      window.alert("제출에 실패했습니다.");
+    }
   };
 
-  return { onClickSubmit };
+  return { onClickSubmit, isLoading, isShow };
 };
 
 export default useSubmit;
