@@ -132,6 +132,7 @@ export const Highthon = styled.p`
 export const ImgDiv = styled.div`
   width: 833px;
   height: 733px;
+  margin-bottom: 10px;
   right: 0;
   bottom: 0;
   position: absolute;
