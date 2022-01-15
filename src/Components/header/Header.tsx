@@ -33,9 +33,6 @@ const Header: React.FC = () => {
           </S.MenuItem>
         </S.MenuDiv>
       </S.Header>
-      <S.SubHeader>
-        <S.FaceBookImg src={BlackFaceBook} alt="" />
-      </S.SubHeader>
     </S.Wrapper>
   );
 };

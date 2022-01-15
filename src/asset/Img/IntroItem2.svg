@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="185" height="205" viewBox="0 0 185 205">
+  <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(-2 -0.5)">
+    <path id="패스_1" data-name="패스 1" d="M24.5,6h140a20,20,0,0,1,20,20V166a20,20,0,0,1-20,20H24.5a20,20,0,0,1-20-20V26a20,20,0,0,1,20-20Z" transform="translate(0 17.005)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <path id="패스_2" data-name="패스 2" d="M24,3V43.01" transform="translate(110.5 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <path id="패스_3" data-name="패스 3" d="M12,3V43.01" transform="translate(42.5 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <path id="패스_4" data-name="패스 4" d="M4.5,15h180" transform="translate(0 68)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  </g>
+</svg>
