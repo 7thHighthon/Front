@@ -55,7 +55,7 @@ export const VoteRightWrap = styled.div`
 `;
 
 export const VoteRightText = styled.p`
-  font-size: 36px;
+  font-size: 34px;
   color: black;
   font-weight: bold;
   font-family: "Noto Sans KR", sans-serif;
