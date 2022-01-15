@@ -32,7 +32,7 @@ const Submit: React.FC = () => {
         </SubmitRightWrap>
       </SubmitItemWrap>
       <SubmitFBButton>
-        <SubmitFBButtonImg src={WhiteFaceBook} />
+        <SubmitFBButtonImg src={WhiteFaceBook} onClick={() => openFaceBook()} />
       </SubmitFBButton>
     </SubmitBox>
   );
