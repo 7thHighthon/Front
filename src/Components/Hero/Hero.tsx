@@ -1,5 +1,6 @@
 import {
   HeroBox,
+  HeroDownArrow,
   HeroFBButton,
   HeroFBButtonImg,
   HeroImg,
@@ -9,7 +10,7 @@ import {
 } from "./Hero.style";
 import MainBanner from "../../asset/Img/MainBanner.png";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
-import Vote from "../Vote";
+import HeroArrow from "../../asset/Img/mainarrow.svg";
 
 const Hero: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Hero: React.FC = () => {
         <HeroTitle>7th Highthon</HeroTitle>
         <HeroSubTitle>FLY High! 청소년을 위한 해커톤</HeroSubTitle>
       </HeroTextWrap>
+      <HeroDownArrow src={HeroArrow} />
       <HeroFBButton>
         <HeroFBButtonImg src={WhiteFaceBook} />
       </HeroFBButton>

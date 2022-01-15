@@ -67,3 +67,11 @@ export const HeroFBButtonImg = styled.img`
   width: 100%;
   object-fit: scale-down;
 `;
+
+export const HeroDownArrow = styled.img`
+  width: 70px;
+  bottom: 32px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  position: absolute;
+`;
