@@ -47,7 +47,7 @@ const SignUp: React.FC = () => {
         <S.HighthonDiv>
           <S.HighthonText>Highthon</S.HighthonText>
           <S.Highthon>
-            <strong>개발자 · 디자이너</strong>를 꿈꾸는{" "}
+            <strong>개발자 · 디자이너</strong>를 꿈꾸는
             <strong>고등학생</strong>을 위한 <strong>해커톤</strong>
           </S.Highthon>
         </S.HighthonDiv>
