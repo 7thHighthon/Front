@@ -1,4 +1,3 @@
-import { IntroFBButton, IntroFBButtonImg } from "../Intro.style";
 import {
   IntroItemBox,
   IntroItemDesc,

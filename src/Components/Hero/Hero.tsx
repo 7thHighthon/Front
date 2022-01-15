@@ -8,10 +8,8 @@ import {
   HeroTitle,
 } from "./Hero.style";
 import MainBanner from "../../asset/Img/MainBanner.png";
-import Intro from "../Intro";
-import History from "../History";
-import Question from "../Question";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
+import Vote from "../Vote";
 
 const Hero: React.FC = () => {
   return (

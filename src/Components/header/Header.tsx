@@ -1,8 +1,6 @@
 import React from "react";
 import * as S from "./index";
 import logo from "../../asset/Img/logo.svg";
-import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
-import BlackFaceBook from "../../asset/Img/blackfacebook.svg";
 
 const Header: React.FC = () => {
   return (
