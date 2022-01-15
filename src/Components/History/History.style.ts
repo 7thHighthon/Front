@@ -7,8 +7,55 @@ export const HistoryBox = styled.div`
   background-color: black;
   position: relative;
   padding: 128px 140px;
+  padding-bottom: 0px;
   box-sizing: border-box;
+`;
+
+export const HistoryLeftWrap = styled.div`
+  min-width: 638px;
+  height: 100%;
+  display: flex;
   flex-direction: column;
+  padding-bottom: 128px;
+  box-sizing: border-box;
+`;
+
+export const HistoryLeftText = styled.p`
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  margin-top: 132px;
+`;
+
+export const HistoryLeftButton = styled.button`
+  width: 262px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  background-color: #227cff;
+  margin-top: 60px;
+`;
+
+export const HistoryRightWrap = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HistoryRightImg = styled.img`
+  width: 802px;
+  object-fit: scale-down;
+  margin-left: auto;
+  margin-top: auto;
 `;
 
 export const HistoryTitle = styled.h1`
