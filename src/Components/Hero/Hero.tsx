@@ -15,21 +15,16 @@ import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 
 const Hero: React.FC = () => {
   return (
-    <>
-      <HeroBox>
-        <HeroImg src={MainBanner} />
-        <HeroTextWrap>
-          <HeroTitle>7th Highthon</HeroTitle>
-          <HeroSubTitle>FLY High! 청소년을 위한 해커톤</HeroSubTitle>
-        </HeroTextWrap>
-        <HeroFBButton>
-          <HeroFBButtonImg src={WhiteFaceBook} />
-        </HeroFBButton>
-      </HeroBox>
-      <Intro />
-      <History />
-      <Question />
-    </>
+    <HeroBox>
+      <HeroImg src={MainBanner} />
+      <HeroTextWrap>
+        <HeroTitle>7th Highthon</HeroTitle>
+        <HeroSubTitle>FLY High! 청소년을 위한 해커톤</HeroSubTitle>
+      </HeroTextWrap>
+      <HeroFBButton>
+        <HeroFBButtonImg src={WhiteFaceBook} />
+      </HeroFBButton>
+    </HeroBox>
   );
 };
 
