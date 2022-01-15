@@ -76,3 +76,26 @@ export const SubmitRightImg = styled.img`
   width: 100%;
   margin-top: auto;
 `;
+
+export const SubmitFBButton = styled.button`
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  outline: none;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  padding: 0px;
+  background: none;
+`;
+
+export const SubmitFBButtonImg = styled.img`
+  width: 100%;
+  object-fit: scale-down;
+`;
