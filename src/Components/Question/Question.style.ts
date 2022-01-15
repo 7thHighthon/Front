@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const QuestionBox = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   padding: 128px 140px;
   display: flex;
   flex-direction: column;
@@ -21,6 +22,19 @@ export const QuestionSubTitle = styled.h2`
   color: #227cff;
   font-weight: bold;
   margin-bottom: 16px;
+`;
+
+export const QuestionLine = styled.hr`
+  width: 100%;
+  margin-top: 28px;
+`;
+
+export const QuestionItemWrap = styled.div`
+  width: 100%;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 `;
 
 export const QuestionFBButton = styled.button`
