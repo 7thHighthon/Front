@@ -92,11 +92,15 @@ export const TextDiv = styled.div`
 export const SignUpText1 = styled.p`
   color: white;
   font-size: 24px;
+  font-weight: Regular;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 export const SignUpText = styled.p`
   color: white;
   font-size: 24px;
   margin-left: 5px;
+  font-weight: Medium;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
