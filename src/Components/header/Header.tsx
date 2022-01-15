@@ -10,12 +10,16 @@ const Header: React.FC = () => {
     history.push("/login");
   };
 
+  const MainHistory = () => {
+    history.push("/");
+  };
+
   return (
     <S.Wrapper>
       <S.Header>
         <S.TitleDiv>
-          <S.Logoimg src={logo} alt="" />
-          <S.Title>Highthon 2022</S.Title>
+          <S.Logoimg onClick={MainHistory} src={logo} alt="" />
+          <S.Title onClick={MainHistory}>Highthon 2022</S.Title>
         </S.TitleDiv>
         <S.MenuDiv>
           <S.MenuItem width="88px" margin="0 60px 0 0">
