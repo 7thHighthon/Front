@@ -21,6 +21,7 @@ export const QuestionSubTitle = styled.h2`
   font-size: 40px;
   color: #227cff;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 16px;
 `;
 

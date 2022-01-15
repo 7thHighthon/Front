@@ -36,6 +36,7 @@ export const HeroTitle = styled.h1`
   line-height: 144px;
   text-align: center;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 export const HeroSubTitle = styled.h2`
@@ -43,6 +44,8 @@ export const HeroSubTitle = styled.h2`
   font-size: 36px;
   margin-top: 20px;
   text-align: center;
+  font-weight: midium;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 export const HeroFBButton = styled.button`

@@ -59,6 +59,8 @@ export const TextSubmit = styled.input<{
   height: 32px;
   padding: 18px 28px;
   font-size: 24px;
+  font-weight: regular;
+  font-family: "Noto Sans KR", sans-serif;
   margin: ${(props) => props.margin};
 `;
 
@@ -68,6 +70,8 @@ export const Submit = styled.input`
   color: white;
   background-color: black;
   border: 4px solid white;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 28px;
   font-size: 24px;
   &:hover {
@@ -101,11 +105,13 @@ export const HighthonText = styled.p`
   color: white;
   font-size: 36px;
   margin-right: 8px;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 export const Highthon = styled.p`
   color: white;
   font-size: 12px;
+  font-family: "Noto Sans KR", sans-serif;
   margin-top: 17px;
 `;
 

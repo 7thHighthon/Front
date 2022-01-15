@@ -25,7 +25,8 @@ const Vote: React.FC = () => {
         </VoteLeftWrap>
         <VoteRightWrap>
           <VoteRightText>
-            가장 훌륭한 프로젝트를 완성한 팀에게
+            가장 훌륭한 프로젝트를 <br />
+            완성한 팀에게
             <br /> <strong>'좋아요'</strong>를 눌러주세요!
           </VoteRightText>
           <VoteRightButton>투표하러가기</VoteRightButton>

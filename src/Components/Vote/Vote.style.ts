@@ -58,6 +58,7 @@ export const VoteRightText = styled.p`
   font-size: 36px;
   color: black;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   line-height: 54px;
   strong {
     color: #227cff;
@@ -74,6 +75,7 @@ export const VoteRightButton = styled.button`
   font-size: 32px;
   color: white;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   border: 0px;
   outline: none;
   cursor: pointer;

@@ -13,6 +13,7 @@ export const IntroTitle = styled.h1`
   font-size: 40px;
   color: #227cff;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   text-align: start;
 `;
 
@@ -22,6 +23,7 @@ export const IntroSubTitle = styled.h2`
   text-align: start;
   line-height: 121px;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 60px;
 `;
 

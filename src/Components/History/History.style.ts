@@ -24,6 +24,7 @@ export const HistoryLeftText = styled.p`
   font-size: 32px;
   color: white;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   margin-top: 132px;
 `;
 
@@ -37,6 +38,7 @@ export const HistoryLeftButton = styled.button`
   font-size: 32px;
   color: white;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   border: 0px;
   outline: none;
   cursor: pointer;

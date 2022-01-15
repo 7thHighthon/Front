@@ -32,6 +32,7 @@ export const Title = styled.p`
   font-size: 22px;
   text-align: center;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 export const MenuDiv = styled.div`
@@ -49,6 +50,7 @@ export const MenuItem = styled.p<{
   margin: ${(props) => props.margin};
   font-size: 20px;
   text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
