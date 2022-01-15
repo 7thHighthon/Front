@@ -88,9 +88,17 @@ export const TextDiv = styled.div`
   margin-bottom: 118px;
 `;
 
+export const SignUpText1 = styled.p`
+  color: white;
+  font-size: 24px;
+`;
+
 export const SignUpText = styled.p`
   color: white;
   font-size: 24px;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const HighthonDiv = styled.div`
