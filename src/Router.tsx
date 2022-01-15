@@ -10,6 +10,7 @@ const Router: React.FC = () => {
         <Route exact path="/" component={P.Main} />
         <Route path="/login" component={P.Login} />
         <Route path="/signup" component={P.SignUp} />
+        <Route path="/submit" component={P.Submit} />
       </Switch>
     </BrowserRouter>
   );
