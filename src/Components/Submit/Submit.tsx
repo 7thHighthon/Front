@@ -14,6 +14,7 @@ import {
 import SubmitMain from "../../asset/Img/SubmitMain.svg";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 import { openFaceBook } from "../../util/openFaceBook";
+import { Link } from "react-router-dom";
 
 const Submit: React.FC = () => {
   return (
@@ -25,7 +26,9 @@ const Submit: React.FC = () => {
           <SubmitLeftText>
             완성된 프로젝트, 발표 자료를 제출해주세요!
           </SubmitLeftText>
-          <SubmitLeftButton>제출하러가기</SubmitLeftButton>
+          <SubmitLeftButton>
+            <Link to="/submit">제출하러가기</Link>
+          </SubmitLeftButton>
         </SubmitLeftWrap>
         <SubmitRightWrap>
           <SubmitRightImg src={SubmitMain} />
