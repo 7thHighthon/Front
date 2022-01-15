@@ -1,4 +1,5 @@
-import { useRecoilState } from "recoil";
+import { useEffect } from "react";
+import { useRecoilState, useResetRecoilState } from "recoil";
 import usePPT from "../../Hook/SubmitForm/usePPT";
 import useSubmit from "../../Hook/SubmitForm/useSubmit";
 import useVideo from "../../Hook/SubmitForm/useVideo";
@@ -28,10 +29,16 @@ import {
 const SubmitForm: React.FC = () => {
   const [submit, setSubmit] = useRecoilState(SubmitData);
   const [isSubmit, setIsSubmit] = useRecoilState(SubmitStatus);
+  const resetSubmitData = useResetRecoilState(SubmitData);
 
   const { onChangeSelectFileName } = usePPT();
   const { onChangeSelectVideoName } = useVideo();
   const { onClickSubmit, isLoading, isShow } = useSubmit();
+
+  useEffect(() => {
+    setIsSubmit(false);
+    resetSubmitData();
+  }, []);
 
   return (
     <SubmitFormBox>

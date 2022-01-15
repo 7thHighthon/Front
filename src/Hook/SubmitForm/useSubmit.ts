@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useResetRecoilState } from "recoil";
 import { postSubmitData } from "../../API/Submit/Submit.api";
 import { SubmitData, SubmitStatus } from "../../Store/SubmitAtom";
 
@@ -8,6 +8,7 @@ const useSubmit = () => {
   const [isSubmit, setIsSubmit] = useRecoilState(SubmitStatus);
   const [isLoading, setIsLoading] = useState(true);
   const [isShow, setIsShow] = useState(false);
+  const resetSubmitData = useResetRecoilState(SubmitData);
 
   const onClickSubmit = async () => {
     if (submit.members === "") {
@@ -48,9 +49,9 @@ const useSubmit = () => {
     formData.append("submitProjectPerson", submit.members as string);
     formData.append("teamName", submit.teamName);
     formData.append("videoFile", submit.video);
+    formData.append("submitProjectName", submit.projectName);
 
     const res = await postSubmitData(formData);
-    console.log(res);
 
     const {
       status,
@@ -72,7 +73,12 @@ const useSubmit = () => {
     }
   };
 
-  return { onClickSubmit, isLoading, isShow };
+  const clearSubmitData = () => {
+    setIsSubmit(false);
+    resetSubmitData();
+  };
+
+  return { onClickSubmit, clearSubmitData, isLoading, isShow };
 };
 
 export default useSubmit;
