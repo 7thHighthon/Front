@@ -25,6 +25,7 @@ export const Logoimg = styled.img`
   height: 26px;
   margin-left: 140px;
   margin-right: 12px;
+  cursor: pointer;
 `;
 
 export const Title = styled.p`
@@ -33,6 +34,7 @@ export const Title = styled.p`
   text-align: center;
   font-weight: bold;
   font-family: "Noto Sans KR", sans-serif;
+  cursor: pointer;
 `;
 
 export const MenuDiv = styled.div`

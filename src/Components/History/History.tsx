@@ -13,12 +13,13 @@ import {
 } from "./History.style";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 import HistoryMain from "../../asset/Img/HistoryMain.png";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const History: React.FC = () => {
   return (
     <HistoryBox>
       <HistoryLeftWrap>
-        <HistorySubTitle>2016 ~ 2022</HistorySubTitle>
+        <HistorySubTitle>2017 ~ 2022</HistorySubTitle>
         <HistoryTitle>History</HistoryTitle>
         <HistoryLeftText>
           하이톤의 역사는 2017년부터 계속되어왔습니다.
@@ -31,7 +32,10 @@ const History: React.FC = () => {
         <HistoryRightImg src={HistoryMain} />
       </HistoryRightWrap>
       <HistoryFBButton>
-        <HistoryFBButtonImg src={WhiteFaceBook} />
+        <HistoryFBButtonImg
+          src={WhiteFaceBook}
+          onClick={() => openFaceBook()}
+        />
       </HistoryFBButton>
     </HistoryBox>
   );

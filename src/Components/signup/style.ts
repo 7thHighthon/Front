@@ -37,7 +37,7 @@ export const FaceBookImg = styled.img`
   cursor: pointer;
 `;
 
-export const LoginTitle = styled.h1`
+export const SignUpTitle = styled.h1`
   text-align: start;
   font-size: 100px;
   color: white;
@@ -45,7 +45,7 @@ export const LoginTitle = styled.h1`
   margin-bottom: 108px;
 `;
 
-export const LoginSubTitle = styled.h2`
+export const SignUpSubTitle = styled.h2`
   text-align: start;
   font-size: 40px;
   color: #227cff;
@@ -53,7 +53,9 @@ export const LoginSubTitle = styled.h2`
   margin-bottom: 16px;
 `;
 
-export const TextSubmit = styled.input<{ margin: string }>`
+export const TextSubmit = styled.input<{
+  margin: string;
+}>`
   width: 573px;
   height: 32px;
   padding: 18px 28px;
@@ -73,8 +75,6 @@ export const Submit = styled.input`
   font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 28px;
   font-size: 24px;
-  cursor: pointer;
-
   &:hover {
     color: black;
     background-color: white;
@@ -95,7 +95,6 @@ export const SignUpText1 = styled.p`
   font-weight: Regular;
   font-family: "Noto Sans KR", sans-serif;
 `;
-
 export const SignUpText = styled.p`
   color: white;
   font-size: 24px;
@@ -133,6 +132,7 @@ export const Highthon = styled.p`
 export const ImgDiv = styled.div`
   width: 833px;
   height: 733px;
+  margin-bottom: 10px;
   right: 0;
   bottom: 0;
   position: absolute;

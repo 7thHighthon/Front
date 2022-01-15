@@ -104,4 +104,5 @@ export const SubmitFBButton = styled.button`
 export const SubmitFBButtonImg = styled.img`
   width: 100%;
   object-fit: scale-down;
+  cursor: pointer;
 `;

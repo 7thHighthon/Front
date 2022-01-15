@@ -10,6 +10,7 @@ import {
 import BlackFaceBook from "../../asset/Img/blackfacebook.svg";
 import * as CONST from "./constant/index";
 import QuestionDropdown from "./QuestionDropdown";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const Question: React.FC = () => {
   return (
@@ -23,7 +24,10 @@ const Question: React.FC = () => {
         })}
       </QuestionItemWrap>
       <QuestionFBButton>
-        <QuestionFBButtonImg src={BlackFaceBook} />
+        <QuestionFBButtonImg
+          src={BlackFaceBook}
+          onClick={() => openFaceBook()}
+        />
       </QuestionFBButton>
     </QuestionBox>
   );

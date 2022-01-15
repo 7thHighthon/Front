@@ -57,4 +57,5 @@ export const IntroFBButton = styled.button`
 export const IntroFBButtonImg = styled.img`
   width: 100%;
   object-fit: scale-down;
+  cursor: pointer;
 `;

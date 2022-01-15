@@ -13,6 +13,7 @@ import {
 } from "./Submit.style";
 import SubmitMain from "../../asset/Img/SubmitMain.svg";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const Submit: React.FC = () => {
   return (
@@ -31,7 +32,7 @@ const Submit: React.FC = () => {
         </SubmitRightWrap>
       </SubmitItemWrap>
       <SubmitFBButton>
-        <SubmitFBButtonImg src={WhiteFaceBook} />
+        <SubmitFBButtonImg src={WhiteFaceBook} onClick={() => openFaceBook()} />
       </SubmitFBButton>
     </SubmitBox>
   );
