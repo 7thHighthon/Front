@@ -7,6 +7,7 @@ import {
 } from "./Hero.style";
 import MainBanner from "../../asset/Img/MainBanner.png";
 import Intro from "../Intro";
+import History from "../History";
 
 const Hero: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Hero: React.FC = () => {
         </HeroTextWrap>
       </HeroBox>
       <Intro />
+      <History />
     </>
   );
 };

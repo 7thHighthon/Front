@@ -4,8 +4,9 @@ export const IntroBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 90px 140px;
+  padding: 128px 140px;
   box-sizing: border-box;
+  position: relative;
 `;
 
 export const IntroTitle = styled.h1`
@@ -29,4 +30,27 @@ export const IntroItemWrap = styled.div`
   display: flex;
   padding: 80px;
   box-sizing: border-box;
+  padding-top: 0px;
+`;
+
+export const IntroFBButton = styled.button`
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  outline: none;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  padding: 0px;
+`;
+
+export const IntroFBButtonImg = styled.img`
+  width: 100%;
+  object-fit: scale-down;
 `;
