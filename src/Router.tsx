@@ -9,7 +9,6 @@ const Router: React.FC = () => {
       <Switch>
         <Route exact path="/" component={P.Main} />
         <Route path="/login" component={P.Login} />
-        <Route path="/submit" component={P.Submit} />
       </Switch>
     </BrowserRouter>
   );
