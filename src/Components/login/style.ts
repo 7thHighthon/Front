@@ -52,9 +52,7 @@ export const LoginSubTitle = styled.h2`
   margin-bottom: 16px;
 `;
 
-export const TextSubmit = styled.input<{
-  margin: string;
-}>`
+export const TextSubmit = styled.input<{ margin: string }>`
   width: 573px;
   height: 32px;
   padding: 18px 28px;
@@ -70,6 +68,8 @@ export const Submit = styled.input`
   border: 4px solid white;
   margin-bottom: 28px;
   font-size: 24px;
+  cursor: pointer;
+
   &:hover {
     color: black;
     background-color: white;
