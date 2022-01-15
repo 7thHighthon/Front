@@ -49,6 +49,10 @@ export const MenuItem = styled.p<{
   margin: ${(props) => props.margin};
   font-size: 20px;
   text-align: center;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const SubHeader = styled.div`
