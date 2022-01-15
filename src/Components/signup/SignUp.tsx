@@ -42,9 +42,7 @@ const SignUp: React.FC = () => {
         <S.Submit type="submit" value="회원가입" />
         <S.TextDiv>
           <S.SignUpText1>이미 계정이 있으신가요?</S.SignUpText1>
-          <S.SignUpText onClick={LoginHistoty}>
-            <strong>로그인 하기</strong>
-          </S.SignUpText>
+          <S.SignUpText onClick={LoginHistoty}>로그인 하기</S.SignUpText>
         </S.TextDiv>
         <S.HighthonDiv>
           <S.HighthonText>Highthon</S.HighthonText>
