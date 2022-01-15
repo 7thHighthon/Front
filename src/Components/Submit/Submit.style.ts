@@ -1,33 +1,55 @@
 import styled from "styled-components";
 
-export const HistoryBox = styled.div`
+export const SubmitBox = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   background-color: black;
   position: relative;
   padding: 128px 140px;
-  padding-bottom: 0px;
   box-sizing: border-box;
+  flex-direction: column;
 `;
 
-export const HistoryLeftWrap = styled.div`
-  min-width: 638px;
+export const SubmitTitle = styled.h1`
+  font-size: 100px;
+  color: white;
+  text-align: start;
+  font-weight: bold;
+`;
+
+export const SubmitSubTitle = styled.h2`
+  font-size: 40px;
+  color: #227cff;
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 16px;
+`;
+
+export const SubmitItemWrap = styled.div`
+  display: flex;
+  height: 100%;
+  margin-top: 36px;
+`;
+
+export const SubmitLeftWrap = styled.div`
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 128px;
-  box-sizing: border-box;
 `;
 
-export const HistoryLeftText = styled.p`
-  font-size: 32px;
+export const SubmitLeftText = styled.p`
+  font-size: 36px;
   color: white;
-  font-weight: bold;
-  margin-top: 132px;
+  line-height: 54px;
+  margin-top: 160px;
+  strong {
+    color: #227cff;
+  }
 `;
 
-export const HistoryLeftButton = styled.button`
+export const SubmitLeftButton = styled.button`
   width: 262px;
   height: 80px;
   border-radius: 20px;
@@ -42,38 +64,20 @@ export const HistoryLeftButton = styled.button`
   cursor: pointer;
   background-color: #227cff;
   margin-top: 60px;
+  margin-bottom: auto;
 `;
 
-export const HistoryRightWrap = styled.div`
-  width: 100%;
+export const SubmitRightWrap = styled.div`
+  min-width: 758px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
 `;
 
-export const HistoryRightImg = styled.img`
-  width: 802px;
-  object-fit: scale-down;
-  margin-left: auto;
+export const SubmitRightImg = styled.img`
+  width: 100%;
   margin-top: auto;
 `;
 
-export const HistoryTitle = styled.h1`
-  font-size: 100px;
-  text-align: start;
-  color: white;
-  font-weight: bold;
-`;
-
-export const HistorySubTitle = styled.h2`
-  font-size: 40px;
-  text-align: start;
-  color: #227cff;
-  font-weight: bold;
-  margin-bottom: 16px;
-`;
-
-export const HistoryFBButton = styled.button`
+export const SubmitFBButton = styled.button`
   width: 40px;
   height: 40px;
   display: flex;
@@ -91,7 +95,7 @@ export const HistoryFBButton = styled.button`
   background: none;
 `;
 
-export const HistoryFBButtonImg = styled.img`
+export const SubmitFBButtonImg = styled.img`
   width: 100%;
   object-fit: scale-down;
 `;
