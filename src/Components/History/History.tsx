@@ -19,7 +19,7 @@ const History: React.FC = () => {
   return (
     <HistoryBox>
       <HistoryLeftWrap>
-        <HistorySubTitle>2016 ~ 2022</HistorySubTitle>
+        <HistorySubTitle>2017 ~ 2022</HistorySubTitle>
         <HistoryTitle>History</HistoryTitle>
         <HistoryLeftText>
           하이톤의 역사는 2017년부터 계속되어왔습니다.
