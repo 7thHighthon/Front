@@ -31,6 +31,7 @@ export const IntroItemWrap = styled.div`
   padding: 80px;
   box-sizing: border-box;
   padding-top: 0px;
+  margin-top: 40px;
 `;
 
 export const IntroFBButton = styled.button`
