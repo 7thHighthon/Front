@@ -96,6 +96,7 @@ export const SignUpText1 = styled.p`
 export const SignUpText = styled.p`
   color: white;
   font-size: 24px;
+  margin-left: 5px;
   &:hover {
     text-decoration: underline;
   }

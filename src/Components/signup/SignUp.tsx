@@ -1,9 +1,16 @@
 import React from "react";
 import * as S from "./style";
+import { useHistory } from "react-router-dom";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 import SignUpImg from "../../asset/Img/signuppage.png";
 
 const SignUp: React.FC = () => {
+  const history = useHistory();
+
+  const LoginHistoty = () => {
+    history.push("/login");
+  };
+
   return (
     <S.Wrapper>
       <S.Div>
@@ -30,7 +37,9 @@ const SignUp: React.FC = () => {
         <S.Submit type="submit" value="회원가입" />
         <S.TextDiv>
           <S.SignUpText1>이미 계정이 있으신가요?</S.SignUpText1>
-          <S.SignUpText>로그인 하기</S.SignUpText>
+          <S.SignUpText onClick={LoginHistoty}>
+            <strong>로그인 하기</strong>
+          </S.SignUpText>
         </S.TextDiv>
         <S.HighthonDiv>
           <S.HighthonText>Highthon</S.HighthonText>

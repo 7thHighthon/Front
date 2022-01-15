@@ -1,8 +1,15 @@
 import React from "react";
 import * as S from "./index";
+import { useHistory } from "react-router-dom";
 import logo from "../../asset/Img/logo.svg";
 
 const Header: React.FC = () => {
+  const history = useHistory();
+
+  const LoginHistoty = () => {
+    history.push("/login");
+  };
+
   return (
     <S.Wrapper>
       <S.Header>
@@ -26,7 +33,7 @@ const Header: React.FC = () => {
           <S.MenuItem width="66px" margin="0 60px 0 0">
             Submit
           </S.MenuItem>
-          <S.MenuItem width="52px" margin="0 148px 0 0">
+          <S.MenuItem onClick={LoginHistoty} width="52px" margin="0 148px 0 0">
             Login
           </S.MenuItem>
         </S.MenuDiv>
