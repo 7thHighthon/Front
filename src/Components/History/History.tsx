@@ -12,7 +12,7 @@ import {
   HistoryTitle,
 } from "./History.style";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
-import HistoryMain from "../../asset/Img/HistoryMain.svg";
+import HistoryMain from "../../asset/Img/HistoryMain.png";
 
 const History: React.FC = () => {
   return (
