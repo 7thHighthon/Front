@@ -67,9 +67,23 @@ export const SubmitLeftButton = styled.button`
   background-color: #227cff;
   margin-top: 60px;
   margin-bottom: auto;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: #227cff;
+  }
+
   &:hover {
     background-color: white;
-    color: #227cff;
   }
 `;
 
