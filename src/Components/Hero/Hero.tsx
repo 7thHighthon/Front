@@ -11,6 +11,7 @@ import {
 import MainBanner from "../../asset/Img/MainBanner.png";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 import HeroArrow from "../../asset/Img/mainarrow.svg";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const Hero: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const Hero: React.FC = () => {
       </HeroTextWrap>
       <HeroDownArrow src={HeroArrow} />
       <HeroFBButton>
-        <HeroFBButtonImg src={WhiteFaceBook} />
+        <HeroFBButtonImg src={WhiteFaceBook} onClick={() => openFaceBook()} />
       </HeroFBButton>
     </HeroBox>
   );

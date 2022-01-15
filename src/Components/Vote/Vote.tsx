@@ -13,6 +13,7 @@ import {
 } from "./Vote.style";
 import BlackFaceBook from "../../asset/Img/blackfacebook.svg";
 import VoteMain from "../../asset/Img/VoteMain.svg";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const Vote: React.FC = () => {
   return (
@@ -32,7 +33,7 @@ const Vote: React.FC = () => {
         </VoteRightWrap>
       </VoteItemWrap>
       <VoteFBButton>
-        <VoteFBButtonImg src={BlackFaceBook} />
+        <VoteFBButtonImg src={BlackFaceBook} onClick={() => openFaceBook()} />
       </VoteFBButton>
     </VoteBox>
   );

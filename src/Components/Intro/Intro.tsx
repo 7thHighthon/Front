@@ -10,6 +10,7 @@ import {
 import * as CONST from "./constant/index";
 import IntroItem from "./IntroItem";
 import BlackFaceBook from "../../asset/Img/blackfacebook.svg";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const Intro: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const Intro: React.FC = () => {
         })}
       </IntroItemWrap>
       <IntroFBButton>
-        <IntroFBButtonImg src={BlackFaceBook} />
+        <IntroFBButtonImg src={BlackFaceBook} onClick={() => openFaceBook()} />
       </IntroFBButton>
     </IntroBox>
   );

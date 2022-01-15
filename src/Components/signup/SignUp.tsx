@@ -3,6 +3,7 @@ import * as S from "./style";
 import { useHistory } from "react-router-dom";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 import SignUpImg from "../../asset/Img/signuppage.png";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const SignUp: React.FC = () => {
   const history = useHistory();
@@ -15,7 +16,11 @@ const SignUp: React.FC = () => {
     <S.Wrapper>
       <S.Div>
         <S.FaceBookDiv>
-          <S.FaceBookImg src={WhiteFaceBook} alt="" />
+          <S.FaceBookImg
+            src={WhiteFaceBook}
+            alt=""
+            onClick={() => openFaceBook()}
+          />
         </S.FaceBookDiv>
         <S.SignUpSubTitle>7th Highthon</S.SignUpSubTitle>
         <S.SignUpTitle>Sign Up</S.SignUpTitle>
