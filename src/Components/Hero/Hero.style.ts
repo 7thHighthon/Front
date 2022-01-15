@@ -68,6 +68,7 @@ export const HeroFBButton = styled.button`
 
 export const HeroFBButtonImg = styled.img`
   width: 100%;
+  cursor: pointer;
   object-fit: scale-down;
 `;
 

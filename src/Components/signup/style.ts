@@ -34,6 +34,7 @@ export const FaceBookDiv = styled.div`
 export const FaceBookImg = styled.img`
   width: 100%;
   object-fit: scale-down;
+  cursor: pointer;
 `;
 
 export const SignUpTitle = styled.h1`

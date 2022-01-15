@@ -59,4 +59,5 @@ export const QuestionFBButton = styled.button`
 export const QuestionFBButtonImg = styled.img`
   width: 100%;
   object-fit: scale-down;
+  cursor: pointer;
 `;

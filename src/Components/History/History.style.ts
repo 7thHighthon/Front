@@ -62,6 +62,7 @@ export const HistoryRightImg = styled.img`
   object-fit: scale-down;
   margin-left: auto;
   margin-top: auto;
+  cursor: pointer;
 `;
 
 export const HistoryTitle = styled.h1`

@@ -13,6 +13,7 @@ import {
 } from "./History.style";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 import HistoryMain from "../../asset/Img/HistoryMain.png";
+import { openFaceBook } from "../../util/openFaceBook";
 
 const History: React.FC = () => {
   return (
@@ -31,7 +32,10 @@ const History: React.FC = () => {
         <HistoryRightImg src={HistoryMain} />
       </HistoryRightWrap>
       <HistoryFBButton>
-        <HistoryFBButtonImg src={WhiteFaceBook} />
+        <HistoryFBButtonImg
+          src={WhiteFaceBook}
+          onClick={() => openFaceBook()}
+        />
       </HistoryFBButton>
     </HistoryBox>
   );
