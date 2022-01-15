@@ -40,6 +40,7 @@ export const QuestionNumber = styled.h1`
 export const QuestionText = styled.p`
   font-size: 36px;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   color: black;
   margin-left: 12px;
 `;
@@ -62,4 +63,5 @@ export const AnswerText = styled.p`
   line-height: 40px;
   color: black;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
 `;

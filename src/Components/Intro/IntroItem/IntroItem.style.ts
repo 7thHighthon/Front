@@ -37,6 +37,7 @@ export const IntroItemTitle = styled.h1`
   color: black;
   text-align: center;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 export const IntroItemDesc = styled.p`
@@ -44,5 +45,7 @@ export const IntroItemDesc = styled.p`
   color: black;
   word-break: keep-all;
   text-align: center;
+  font-weight: midium;
+  font-family: "Noto Sans KR", sans-serif;
   line-height: 30px;
 `;

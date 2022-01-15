@@ -44,6 +44,7 @@ export const SubmitLeftText = styled.p`
   color: white;
   line-height: 54px;
   margin-top: 160px;
+  font-family: "Noto Sans KR", sans-serif;
   strong {
     color: #227cff;
   }
@@ -59,6 +60,7 @@ export const SubmitLeftButton = styled.button`
   font-size: 32px;
   color: white;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   border: 0px;
   outline: none;
   cursor: pointer;
