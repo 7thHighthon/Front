@@ -9,7 +9,7 @@ const Login: React.FC = () => {
       <S.Wrapper>
         <S.Div>
           <S.FaceBookDiv>
-            <S.FaceBookImg src={WhiteFaceBook} />
+            <S.FaceBookImg src={WhiteFaceBook} alt="" />
           </S.FaceBookDiv>
           <S.LoginSubTitle>7th Highthon</S.LoginSubTitle>
           <S.LoginTitle>Login</S.LoginTitle>
