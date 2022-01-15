@@ -1,43 +1,47 @@
 import React from "react";
 import * as S from "./style";
 import LoginImg from "../../asset/Img/loginpage.svg";
+import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 
 const Login: React.FC = () => {
   return (
-    <S.Wrapper>
-      <S.Login>
-        <S.InputDiv>
-          <S.Title>7th Highthon</S.Title>
-          <S.Field>Login</S.Field>
-          <S.TextInput
+    <>
+      <S.Wrapper>
+        <S.Div>
+          <S.FaceBookDiv>
+            <S.FaceBookImg src={WhiteFaceBook} />
+          </S.FaceBookDiv>
+          <S.LoginSubTitle>7th Highthon</S.LoginSubTitle>
+          <S.LoginTitle>Login</S.LoginTitle>
+          <S.TextSubmit
             type="text"
             placeholder="이메일을 입력해주세요"
-            margin="0 0 24px 140px"
+            margin="0 0 24px 0"
           />
-          <S.TextInput
+          <S.TextSubmit
             type="text"
             placeholder="비밀번호를 입력해주세요"
-            margin="0 0 100px 140px"
+            margin=" 0 0 80px 0"
           />
-        </S.InputDiv>
-        <S.Submit type="submit" value="로그인" />
-        <S.SignUpDiv>
-          <S.SignUpText>계정이 없으신가요? </S.SignUpText>
-          <S.SignUpLink>회원가입 하기</S.SignUpLink>
-        </S.SignUpDiv>
-        <S.introTextDiv>
-          <S.introTitle>Highthon</S.introTitle>
-          <S.introTextBold>개발자 · 디자이너</S.introTextBold>
-          <S.introTextReg>를 꿈꾸는</S.introTextReg>
-          <S.introTextBold>고등학생</S.introTextBold>
-          <S.introTextReg>을 위한</S.introTextReg>
-          <S.introTextBold>해커톤</S.introTextBold>
-        </S.introTextDiv>
-      </S.Login>
-      <S.imgDiv>
-        <S.LoginImg src={LoginImg} alt="" />
-      </S.imgDiv>
-    </S.Wrapper>
+          <S.Submit type="submit" value="로그인" />
+          <S.TextDiv>
+            <S.SignUpText>
+              계정이 없으신가요? <strong>회원가입 하기</strong>
+            </S.SignUpText>
+          </S.TextDiv>
+          <S.HighthonDiv>
+            <S.HighthonText>Highthon</S.HighthonText>
+            <S.Highthon>
+              <strong>개발자 · 디자이너</strong>를 꿈꾸는{" "}
+              <strong>고등학생</strong>을 위한 <strong>해커톤</strong>
+            </S.Highthon>
+          </S.HighthonDiv>
+        </S.Div>
+        <S.ImgDiv>
+          <S.LoginImg src={LoginImg} alt="" />
+        </S.ImgDiv>
+      </S.Wrapper>
+    </>
   );
 };
 

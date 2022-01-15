@@ -6,103 +6,117 @@ export const Wrapper = styled.div`
   background-color: black;
   display: flex;
   justify-content: center;
+  padding: 128px 140px;
+  box-sizing: border-box;
+  position: relative;
 `;
 
-export const Login = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-`;
-
-export const InputDiv = styled.div`
+export const Div = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-right: auto;
 `;
 
-export const Title = styled.p`
-  width: 242px;
-  height: 49px;
-  margin-left: 140px;
-  color: #227cff;
-  font-size: 40px;
+export const FaceBookDiv = styled.div`
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  background: none;
 `;
 
-export const Field = styled.p`
-  width: 258px;
-  height: 121px;
-  margin-left: 140px;
-  margin-bottom: 108px;
-  color: #ffffff;
+export const FaceBookImg = styled.img`
+  width: 100%;
+  object-fit: scale-down;
+`;
+
+export const LoginTitle = styled.h1`
+  text-align: start;
   font-size: 100px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 108px;
 `;
 
-export const TextInput = styled.input<{
+export const LoginSubTitle = styled.h2`
+  text-align: start;
+  font-size: 40px;
+  color: #227cff;
+  font-weight: bold;
+  margin-bottom: 16px;
+`;
+
+export const TextSubmit = styled.input<{
   margin: string;
 }>`
-  width: 613px;
-  height: 72px;
-  padding: 18px 28px 18px 28px;
+  width: 573px;
+  height: 32px;
+  padding: 18px 28px;
+  font-size: 24px;
   margin: ${(props) => props.margin};
 `;
 
 export const Submit = styled.input`
-  width: 673px;
+  width: 633px;
   height: 72px;
-  margin-left: 140px;
-  margin-bottom: 28px;
   color: white;
   background-color: black;
   border: 4px solid white;
+  margin-bottom: 28px;
+  font-size: 24px;
+  &:hover {
+    color: black;
+    background-color: white;
+  }
 `;
 
-export const SignUpDiv = styled.div`
+export const TextDiv = styled.div`
+  width: 633px;
+  height: 26px;
   display: flex;
-  align-items: center;
-  margin-bottom: 168px;
+  justify-content: center;
+  margin-bottom: 118px;
 `;
 
 export const SignUpText = styled.p`
-  margin-left: 308px;
   color: white;
   font-size: 24px;
 `;
 
-export const SignUpLink = styled.p`
-  margin-left: 5px;
-  color: white;
-  font-size: 24px;
-`;
-
-export const introTextDiv = styled.div`
+export const HighthonDiv = styled.div`
+  width: 440px;
+  height: 44px;
   display: flex;
+  justify-content: center;
   align-items: center;
 `;
 
-export const introTitle = styled.p`
-  width: 156px;
-  height: 44px;
+export const HighthonText = styled.p`
   color: white;
   font-size: 36px;
-  margin-left: 140px;
+  margin-right: 8px;
 `;
 
-export const introTextBold = styled.p`
-  font-size: 12px;
-  margin-top: 11px;
-  margin-left: 5px;
+export const Highthon = styled.p`
   color: white;
-`;
-
-export const introTextReg = styled.p`
   font-size: 12px;
-  margin-top: 11px;
-  color: white;
+  margin-top: 17px;
 `;
 
-export const imgDiv = styled.div``;
-
-export const LoginImg = styled.img`
+export const ImgDiv = styled.div`
   width: 833px;
   height: 733px;
-  margin-top: 217px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+`;
+
+export const LoginImg = styled.img`
+  width: 100%;
 `;
