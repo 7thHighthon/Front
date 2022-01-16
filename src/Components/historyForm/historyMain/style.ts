@@ -43,6 +43,7 @@ export const FirstName = styled.p`
   font-weight: bold;
   font-size: 50px;
   color: #000000;
+  cursor: pointer;
 `;
 
 export const FirstImg = styled.img`

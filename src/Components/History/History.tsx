@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import {
   HistoryBox,
   HistoryFBButton,
@@ -16,6 +17,11 @@ import HistoryMain from "../../asset/Img/HistoryMain.png";
 import { openFaceBook } from "../../util/openFaceBook";
 
 const History: React.FC = () => {
+  const history = useHistory();
+
+  const moveHistoty = () => {
+    history.push("/history");
+  };
   return (
     <HistoryBox>
       <HistoryLeftWrap>
@@ -26,7 +32,7 @@ const History: React.FC = () => {
           <br />
           현재까지의 여러 프로젝트를 만나보세요.
         </HistoryLeftText>
-        <HistoryLeftButton>페이지 이동</HistoryLeftButton>
+        <HistoryLeftButton onClick={moveHistoty}>페이지 이동</HistoryLeftButton>
       </HistoryLeftWrap>
       <HistoryRightWrap>
         <HistoryRightImg src={HistoryMain} />
