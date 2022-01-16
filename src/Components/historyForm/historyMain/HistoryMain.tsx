@@ -1,5 +1,6 @@
 import React from "react";
 import HistoryFormHeader from "../historyHeader/HistoryForm.Header";
+import { useHistory } from "react-router-dom";
 import * as S from "./style";
 import FirstCrown from "../../../asset/Img/1등.svg";
 import SecondCrown from "../../../asset/Img/2등.svg";
@@ -11,6 +12,12 @@ import cl from "../../../asset/Img/cl.png";
 import GongGu from "../../../asset/Img/09.png";
 
 const HistoryMain: React.FC = () => {
+  const history = useHistory();
+
+  const moveHistotyPost = () => {
+    history.push("/historypost");
+  };
+
   const PostList = ["4", "5", "6", "7", "8", "9", "10", "11", "12"];
 
   const MenuList = PostList.map((menu, index) => {
@@ -35,7 +42,9 @@ const HistoryMain: React.FC = () => {
         <S.FirstForm>
           <S.FirstHeader>
             <S.FirstCrown src={FirstCrown} alt="" />
-            <S.FirstName>NMS(Notice Management System)</S.FirstName>
+            <S.FirstName onClick={moveHistotyPost}>
+              NMS(Notice Management System)
+            </S.FirstName>
           </S.FirstHeader>
           <S.FirstMain>
             <S.FirstImg src={NMS} alt="" />

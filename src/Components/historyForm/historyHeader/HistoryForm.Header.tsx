@@ -79,16 +79,6 @@ const HistoryFormHeader: React.FC = () => {
 
   return (
     <S.Wrapper>
-      <S.HistoryHeader>
-        <S.logoDiv>
-          <S.logo src={logo} alt="" />
-          <S.logoText>Highthon 2022</S.logoText>
-        </S.logoDiv>
-        <S.UserNameDiv>
-          <S.UserName>추혜연</S.UserName>
-          <S.UserName2>님</S.UserName2>
-        </S.UserNameDiv>
-      </S.HistoryHeader>
       <S.HistoryTitleDiv>
         <S.TitleDiv>
           <S.SubTitle>2017~2022</S.SubTitle>

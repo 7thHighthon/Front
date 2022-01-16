@@ -108,24 +108,25 @@ export const Hr = styled.hr`
 
 export const Form = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 120px;
+  margin-left: 141px;
 `;
 
 export const MainImg = styled.img`
-  width: 240px;
-  height: 240px;
+  width: 620px;
+  height: 620px;
   margin-right: 40px;
+
+  right: 0;
 `;
 
 export const MainTextDiv = styled.div`
   width: 689px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
 `;
 
 export const Text1 = styled.p`
@@ -146,7 +147,7 @@ export const Text3 = styled.p`
   width: 1088px;
   height: 148px;
   color: #707070;
-  text-align: center;
+  text-align: start;
   font-size: 24px;
   font-family: "Noto Sans KR", sans-serif;
 `;
@@ -155,7 +156,5 @@ export const TextDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 84px;
+  margin-bottom: 300px;
 `;
-
-export const TextDiv2 = styled.div``;
