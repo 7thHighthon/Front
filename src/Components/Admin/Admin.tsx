@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useRouteMatch } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import useAdminData from "../../Hook/Admin/useAdminData";
 import { getDecodePayload } from "../../Lib/getToken";
@@ -11,11 +11,16 @@ import {
   AdminSubTitle,
   AdminTitle,
 } from "./Admin.style";
+import AdminDetail from "./AdminDetail";
 import AdminForm from "./AdminForm";
 
 const Admin: React.FC = () => {
   const history = useHistory();
   const [projects, setProjects] = useRecoilState(WaitProjectData);
+
+  const detailMatch = useRouteMatch<{ detailId: string }>(
+    "/admin/detail/:detailId"
+  );
 
   useEffect(() => {
     const data: any = getDecodePayload();
@@ -38,18 +43,23 @@ const Admin: React.FC = () => {
       <AdminSubTitle>7th Highthon</AdminSubTitle>
       <AdminTitle>Check</AdminTitle>
       <AdminFormLine />
-      <AdminFormItemWrap>
-        {projects.map((item, idx) => {
-          return (
-            <AdminForm
-              projectName={item.submitProjectName}
-              members={item.submitProjectPerson}
-              teamName={item.teamName}
-              key={idx}
-            />
-          );
-        })}
-      </AdminFormItemWrap>
+      {detailMatch === null ? (
+        <AdminFormItemWrap>
+          {projects.map((item, idx) => {
+            return (
+              <AdminForm
+                projectName={item.submitProjectName}
+                members={item.submitProjectPerson}
+                teamName={item.teamName}
+                index={item.idx}
+                key={idx}
+              />
+            );
+          })}
+        </AdminFormItemWrap>
+      ) : (
+        <AdminDetail idx={detailMatch.params.detailId} />
+      )}
     </AdminBox>
   );
 };

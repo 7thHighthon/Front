@@ -6,7 +6,6 @@ interface IwaitProjectData {
   submitProjectName: string;
   teamName: string;
   submitProjectPerson: string;
-  index: number;
   idx: number;
   ppturl: string;
   videoURL: string;
@@ -20,4 +19,23 @@ export const WaitProjectData = atom<IwaitProjectData[]>({
 export const CheckProjectCount = atom<number>({
   key: "CheckProjectCount",
   default: 0,
+});
+
+export const CurrentSelectDetailIndex = atom<string>({
+  key: "currentSelectDetailIndex",
+  default: "",
+});
+
+export const AdminDetailData = atom<IwaitProjectData>({
+  key: "AdminDetailData",
+  default: {
+    gitHubURL: "",
+    homePageURL: "",
+    submitProjectName: "",
+    teamName: "",
+    submitProjectPerson: "",
+    idx: 0,
+    ppturl: "",
+    videoURL: "",
+  },
 });

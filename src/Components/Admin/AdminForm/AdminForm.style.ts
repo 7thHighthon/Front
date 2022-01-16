@@ -11,6 +11,7 @@ export const AdminFormBox = styled.div`
   padding: 40px 60px;
   padding-left: 48px;
   background-color: #f5f5f5;
+  cursor: pointer;
 `;
 
 export const AdminFormTitle = styled.h1`

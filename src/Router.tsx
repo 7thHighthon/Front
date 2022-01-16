@@ -12,7 +12,7 @@ const Router: React.FC = () => {
         <Route path="/login" component={P.Login} />
         <Route path="/signup" component={P.SignUp} />
         <Route path="/submit" component={P.Submit} />
-        <Route path="/admin" component={Admin} />
+        <Route path={["/admin", "/admin/detail/:detailId"]} component={Admin} />
       </Switch>
     </BrowserRouter>
   );

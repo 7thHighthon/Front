@@ -10,6 +10,7 @@ export const AdminBox = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  position: relative;
 `;
 
 export const AdminTitle = styled.h1`
