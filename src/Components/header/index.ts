@@ -43,10 +43,7 @@ export const MenuDiv = styled.div`
   align-items: center;
 `;
 
-export const MenuItem = styled.p<{
-  width: string;
-  margin: string;
-}>`
+export const MenuItem = styled.p<{ width: string; margin: string }>`
   width: ${(props) => props.width};
   height: 23px;
   margin: ${(props) => props.margin};
@@ -57,6 +54,40 @@ export const MenuItem = styled.p<{
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const MenuUserItem = styled.p<{ margin: string }>`
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: #707070;
+  margin: ${(props) => props.margin};
+  cursor: pointer;
+
+  strong {
+    font-size: 20px;
+    color: black;
+  }
+  position: relative;
+`;
+
+export const MenuDropdownItemBox = styled.div`
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 26px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+`;
+
+export const MenuDropdownItem = styled.div`
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const SubHeader = styled.div`

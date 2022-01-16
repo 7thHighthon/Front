@@ -1,10 +1,13 @@
 import { useHistory } from "react-router-dom";
 import { useRecoilState, useResetRecoilState } from "recoil";
 import { postLoginData } from "../../API/Login/Login.api";
-import { LoginData } from "../../Store/LoginAtom";
+import { LoginData, LoginStatus } from "../../Store/LoginAtom";
+import { UserNameInfo } from "../../Store/UserInfo";
 
 const useLogin = () => {
   const [loginData, setLoginData] = useRecoilState(LoginData);
+  const [isLogin, setIsLogin] = useRecoilState(LoginStatus);
+  const [userName, setUserName] = useRecoilState(UserNameInfo);
   const resetLoginData = useResetRecoilState(LoginData);
   const history = useHistory();
 
@@ -32,6 +35,8 @@ const useLogin = () => {
       window.alert(msg);
       if (success) {
         localStorage.setItem("access-token", accessToken);
+        setUserName(name);
+        setIsLogin(true);
         history.push("/");
         resetLoginData();
         return;

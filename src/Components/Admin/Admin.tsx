@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import useAdminData from "../../Hook/Admin/useAdminData";
-import { getDecodePayload } from "../../Lib/getToken";
+import { getDecodePayload, getToken } from "../../Lib/getToken";
 import { WaitProjectData } from "../../Store/AdminAtom";
 import {
   AdminBox,
@@ -23,12 +23,14 @@ const Admin: React.FC = () => {
   );
 
   useEffect(() => {
-    const data: any = getDecodePayload();
-    const { auth } = data;
-    const grade = auth.slice(5, auth.length);
-    if (grade !== "ADMIN") {
-      window.alert("관리자 외에는 접근 할 수 없습니다.");
-      history.push("/");
+    if (getToken()) {
+      const data: any = getDecodePayload();
+      const { auth } = data;
+      const grade = auth.slice(5, auth.length);
+      if (grade !== "ADMIN") {
+        window.alert("관리자 외에는 접근 할 수 없습니다.");
+        history.push("/");
+      }
     }
   }, []);
 

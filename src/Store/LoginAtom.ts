@@ -12,3 +12,8 @@ export const LoginData = atom<ILoginData>({
     password: "",
   },
 });
+
+export const LoginStatus = atom<boolean>({
+  key: "LoginStatus",
+  default: false,
+});
