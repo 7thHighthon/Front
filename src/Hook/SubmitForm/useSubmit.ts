@@ -1,12 +1,16 @@
-import { useRecoilState } from "recoil";
+import { useState } from "react";
+import { useRecoilState, useResetRecoilState } from "recoil";
+import { postSubmitData } from "../../API/Submit/Submit.api";
 import { SubmitData, SubmitStatus } from "../../Store/SubmitAtom";
 
 const useSubmit = () => {
   const [submit, setSubmit] = useRecoilState(SubmitData);
   const [isSubmit, setIsSubmit] = useRecoilState(SubmitStatus);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isShow, setIsShow] = useState(false);
+  const resetSubmitData = useResetRecoilState(SubmitData);
 
-  const onClickSubmit = () => {
-    console.log(submit);
+  const onClickSubmit = async () => {
     if (submit.members === "") {
       window.alert("팀 구성원을 적어주세요.");
       return;
@@ -36,10 +40,45 @@ const useSubmit = () => {
       return;
     }
 
-    setIsSubmit(true);
+    setIsShow(true);
+
+    const formData = new FormData();
+    formData.append("PPTfile", submit.ppt);
+    formData.append("gitHubURL", submit.githubOrganization);
+    formData.append("homePageURL", submit.homepageUrl);
+    formData.append("submitProjectPerson", submit.members as string);
+    formData.append("teamName", submit.teamName);
+    formData.append("videoFile", submit.video);
+    formData.append("submitProjectName", submit.projectName);
+
+    const res = await postSubmitData(formData);
+
+    const {
+      status,
+      data: { msg, success },
+    } = res;
+    if (status === 200) {
+      window.alert(msg);
+      if (success) {
+        setIsSubmit(true);
+        setIsLoading(false);
+        setIsShow(false);
+        return;
+      }
+      window.location.reload();
+    }
+    if (status !== 200) {
+      setIsShow(false);
+      window.alert("제출에 실패했습니다.");
+    }
   };
 
-  return { onClickSubmit };
+  const clearSubmitData = () => {
+    setIsSubmit(false);
+    resetSubmitData();
+  };
+
+  return { onClickSubmit, clearSubmitData, isLoading, isShow };
 };
 
 export default useSubmit;

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
+import useSubmit from "../../../Hook/SubmitForm/useSubmit";
 import { SubmitData } from "../../../Store/SubmitAtom";
 import {
   CompleteButton,
@@ -12,6 +13,8 @@ import {
 
 const SubmitCompleteForm: React.FC = () => {
   const [submit, setSubmit] = useRecoilState(SubmitData);
+
+  const { clearSubmitData } = useSubmit();
 
   return (
     <SubmitCompleteBox>
@@ -54,7 +57,7 @@ const SubmitCompleteForm: React.FC = () => {
           <CompleteText>{submit.ppt?.name}</CompleteText>
         </CompleteTextWrap>
       </CompleteTextWrapColumn>
-      <CompleteButton>
+      <CompleteButton onClick={clearSubmitData}>
         <Link to="/">확인</Link>
       </CompleteButton>
     </SubmitCompleteBox>

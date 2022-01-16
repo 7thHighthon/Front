@@ -4,9 +4,15 @@ import { useHistory } from "react-router-dom";
 import WhiteFaceBook from "../../asset/Img/whitefacebook.svg";
 import SignUpImg from "../../asset/Img/signuppage.png";
 import { openFaceBook } from "../../util/openFaceBook";
+import { useRecoilState } from "recoil";
+import { SignupData } from "../../Store/SignupAtom";
+import useSignup from "../../Hook/Signup/useSignup";
 
 const SignUp: React.FC = () => {
   const history = useHistory();
+  const [signupInfo, setSignupInfo] = useRecoilState(SignupData);
+
+  const { onClickSignup } = useSignup();
 
   const LoginHistoty = () => {
     history.push("/login");
@@ -28,18 +34,42 @@ const SignUp: React.FC = () => {
           type="text"
           placeholder="이름을 입력해주세요"
           margin="0 0 24px 0"
+          name="name"
+          value={signupInfo.name}
+          onChange={(e) =>
+            setSignupInfo((prev) => ({
+              ...prev,
+              [e.target.name]: e.target.value,
+            }))
+          }
         />
         <S.TextSubmit
           type="text"
           placeholder="이메일을 입력해주세요"
           margin="0 0 24px 0"
+          name="email"
+          value={signupInfo.email}
+          onChange={(e) =>
+            setSignupInfo((prev) => ({
+              ...prev,
+              [e.target.name]: e.target.value,
+            }))
+          }
         />
         <S.TextSubmit
           type="text"
           placeholder="비밀번호를 입력해주세요"
           margin="0 0 55px 0"
+          name="password"
+          value={signupInfo.password}
+          onChange={(e) =>
+            setSignupInfo((prev) => ({
+              ...prev,
+              [e.target.name]: e.target.value,
+            }))
+          }
         />
-        <S.Submit type="submit" value="회원가입" />
+        <S.Submit type="submit" value="회원가입" onClick={onClickSignup} />
         <S.TextDiv>
           <S.SignUpText1>이미 계정이 있으신가요?</S.SignUpText1>
           <S.SignUpText onClick={LoginHistoty}>로그인 하기</S.SignUpText>

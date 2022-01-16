@@ -1,9 +1,9 @@
-import HistoryMain from "./Components/historyForm/historyMain/HistoryMain";
+import Router from "./Router";
 
 const App: React.FC = () => {
   return (
     <>
-      <HistoryMain />
+      <Router />
     </>
   );
 };
