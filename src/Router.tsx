@@ -1,5 +1,6 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./Components/header/Header";
+import HistoryDetail from "./Components/historyForm/historydetail/HistoryDetail";
 import * as P from "./Page/index";
 
 const Router: React.FC = () => {
@@ -11,6 +12,8 @@ const Router: React.FC = () => {
         <Route path="/login" component={P.Login} />
         <Route path="/signup" component={P.SignUp} />
         <Route path="/submit" component={P.Submit} />
+        <Route path="/history" component={P.History} />
+        <Route path="/historypost" component={HistoryDetail} />
       </Switch>
     </BrowserRouter>
   );
