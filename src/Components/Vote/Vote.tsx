@@ -14,8 +14,14 @@ import {
 import BlackFaceBook from "../../asset/Img/blackfacebook.svg";
 import VoteMain from "../../asset/Img/VoteMain.svg";
 import { openFaceBook } from "../../util/openFaceBook";
+import { useHistory } from "react-router-dom";
 
 const Vote: React.FC = () => {
+  const history = useHistory();
+
+  const moveVote = () => {
+    history.push("/vote");
+  };
   return (
     <VoteBox>
       <VoteSubTitle>7th Highthon</VoteSubTitle>
@@ -29,7 +35,7 @@ const Vote: React.FC = () => {
             가장 훌륭한 프로젝트를 완성한 팀에게
             <br /> <strong>'좋아요'</strong>를 눌러주세요!
           </VoteRightText>
-          <VoteRightButton>투표하러가기</VoteRightButton>
+          <VoteRightButton onClick={moveVote}>투표하러가기</VoteRightButton>
         </VoteRightWrap>
       </VoteItemWrap>
       <VoteFBButton>
